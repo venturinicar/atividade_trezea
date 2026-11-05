@@ -1,0 +1,82 @@
+/* ESTILOS GERAIS DO CORPO DA PÁGINA */
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  background-color: #0f0e17; 
+  color: #fffffe; 
+  padding: 20px; 
+}
+
+/* MODELO FLEXBOX: Organiza as 3 seções lado a lado */
+.container-principal { 
+  display: flex; 
+  justify-content: space-between; 
+  gap: 20px; 
+  max-width: 1200px; 
+  margin: 50px auto; 
+}
+
+/* Estilo base de cada coluna/seção */
+.secao { 
+  flex: 1; 
+  background-color: #0e44f3; 
+  border-radius: 20px; 
+  padding: 20px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+/* CLASSES E IDs: Padronização de Títulos */
+/* CORRIGIDO: Cor alterada para branco (#fffffe) para dar contraste com o fundo azul */
+.titulo-secao { 
+  font-size: 1.5rem; 
+  color: #fffffe; 
+  margin-bottom: 15px; 
+  border-bottom: 2px solid #ff8906; 
+  padding-bottom: 5px; 
+}
+
+/* OTIMIZADO: IDs agrupados em uma única regra para evitar repetição de código */
+#filmes, #musica, #games { 
+  border-top: 4px solid #ff8906; 
+}
+
+/* TEXTOS EXPLICATIVOS (<p>) */
+.texto-explicativo { 
+  font-size: 0.95rem; 
+  line-height: 1.5; 
+  color: #a7a9be; 
+  margin-bottom: 20px; 
+}
+
+/* GALERIA DE IMAGENS E FONTES DAS LEGENDAS */
+.galeria-imagens { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 15px; 
+}
+
+.galeria-imagens figure { 
+  text-align: center; 
+}
+
+.galeria-imagens img { 
+  width: 100%; 
+  height: 130px; 
+  object-fit: cover; 
+  border-radius: 6px; 
+  transition: transform 0.3s ease; 
+}
+
+.galeria-imagens img:hover { 
+  transform: scale(1.03); 
+}
+
+/* CORRIGIDO: Cor alterada para cinza claro (#e2e2e2) para ficar legível no fundo azul */
+.legenda-img { 
+  font-size: 0.8rem; 
+  font-style: italic; 
+  color: #e2e2e2; 
+  margin-top: 5px; 
+}
